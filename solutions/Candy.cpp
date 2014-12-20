@@ -22,8 +22,8 @@ public:
 		qsort(children,len,sizeof(children[0]),cmp);
 
 		int* candy_num=(int*)malloc(len*sizeof(int));
-	//	memset(candy_num,0,sizeof(int)*len);
-	    fill(candy_num , candy_num + len , 0);
+		//memset(candy_num,0,sizeof(int)*len);
+	    	fill(candy_num , candy_num + len , 0);
 		int ans=0;
 		for(int i=0;i<len;i++){
 			int leftpos_candy=0,rightpos_candy=0;
