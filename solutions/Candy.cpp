@@ -2,6 +2,7 @@ typedef struct child_s{
 	int pos;
 	int rate;
 }child;
+
 int cmp(const void *a , const void *b){
 	child ac=*(child*)a;
 	child bc=*(child*)b;
