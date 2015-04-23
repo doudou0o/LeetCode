@@ -44,7 +44,7 @@ database	.\.ycm_extra_conf.py	/^  database = None $/;"	v
 database	.\.ycm_extra_conf.py	/^  database = ycm_core.CompilationDatabase( compilation_database_folder ) $/;"	v
 detectCycle	.\Linked_List_Cycle_2.cpp	/^    ListNode *detectCycle(ListNode *head) {$/;"	f	class:Solution
 evalRPN	.\Evaluate_Reverse_polish_Notation.cpp	/^    int evalRPN(vector<string> &tokens) {$/;"	f	class:Solution
-findMedianSortedArrays	.\Median_of_Two_Sorted_Arrays.cpp	/^double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2)$/;"	f
+findMedianSortedArrays	.\Median_of_Two_Sorted_Arrays.cpp	/^double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2){$/;"	f
 flags	.\.ycm_extra_conf.py	/^flags = [ $/;"	v
 get	.\LRU_Cache.cpp	/^    int get(int key){$/;"	f	class:LRUCache
 hasCycle	.\Linked_List_Cycle.cpp	/^    bool hasCycle(ListNode *head) {$/;"	f	class:Solution
