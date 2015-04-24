@@ -1,6 +1,0 @@
-syn keyword CTagsStructure CacheEntry child_s
-syn keyword CTagsMember m_LRU_cache pos m_capacity rate value key m_map
-syn keyword CTagsFunction canCompleteCircuit set PreOrderTraversal hasCycle lengthOfLongestSubstring CacheEntry reverseWords detectCycle findMedianSortedArrays insertionSortList preorderTraversal postorderTraversal main copyRandomList reorderList MoveToHead get maxPoints wordBreak LRUCache preorder sortList candy merge singleNumber wordBreaker evalRPN cmp
-syn keyword CTagsType child
-syn keyword CTagsClass Solution LRUCache
-
