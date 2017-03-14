@@ -8,7 +8,6 @@ class ListNode(object):
         self.val = x
         self.next = None
 
-
 class Solution(object):
     def reverseKGroup(self, head, k):
         """
@@ -16,53 +15,59 @@ class Solution(object):
         :type k: int
         :rtype: ListNode
         """
-        h = newhead = ListNode(0);
-        cur = t = head
 
-        for i in range(1,k):
-            step = step.next if step!=None else None
-        if step==None:
+        cur = head
+        n = 0
+        while cur!=None and n!=k:
+            cur = cur.next
+            n = n + 1
+
+        if n==k:
+            cur = self.reverseKGroup(cur, k)
+            for i in range(k):
+                tmp = head.next
+                head.next = cur
+                cur = head
+                head = tmp
+            return cur
+        else:
             return head
-
-        num = 0
-        while step!=None and cur!=None:
-            ## 前插
-            tmp = cur.next
-            cur.next, h.next = h.next, cur
-
-            cur, step = tmp, step.next if step!=None else None
-            num = num + 1
-            if num==k:
-                if step == None:
-                    t.next = cur
-                    break
-                else:
-                    h, t, num = t, cur, 0
-
-        return newhead.next
-
 
 if __name__ == '__main__':
     t = l1 = ListNode(1)
-    t.next = ListNode(2);t=t.next
-    t.next = ListNode(3);t=t.next
-    t.next = ListNode(4);t=t.next
-    t.next = ListNode(5);t=t.next
+    ans = Solution().reverseKGroup(l1, 1)
+    while ans:
+        print ans.val
+        ans = ans.next
+    print "======"
 
+    t = l1 = ListNode(1)
+    t.next = ListNode(2);t=t.next
     ans = Solution().reverseKGroup(l1, 2)
     while ans:
         print ans.val
         ans = ans.next
+    print "======"
     
     t = l1 = ListNode(1)
     t.next = ListNode(2);t=t.next
     t.next = ListNode(3);t=t.next
     t.next = ListNode(4);t=t.next
     t.next = ListNode(5);t=t.next
-
+    ans = Solution().reverseKGroup(l1, 2)
+    while ans:
+        print ans.val
+        ans = ans.next
+    print "======"
+    
+    t = l1 = ListNode(1)
+    t.next = ListNode(2);t=t.next
+    t.next = ListNode(3);t=t.next
+    t.next = ListNode(4);t=t.next
+    t.next = ListNode(5);t=t.next
     ans = Solution().reverseKGroup(l1, 3)
     while ans:
         print ans.val
         ans = ans.next
+    print "======"
 
-    pass
