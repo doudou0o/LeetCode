@@ -39,7 +39,7 @@ class Solution(object):
 
 
 if __name__ == '__main__':
-    
+
     Solution().mergeKLists([[]])
 
     l=[]
@@ -58,7 +58,7 @@ if __name__ == '__main__':
     t.next = ListNode(5); t=t.next
     t.next = ListNode(5); t=t.next
     t.next = ListNode(7); t=t.next
-    
+
     ans = Solution().mergeKLists(l)
     while ans!=None:
         print ans.val

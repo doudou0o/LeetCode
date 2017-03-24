@@ -48,7 +48,7 @@ if __name__ == '__main__':
         print ans.val
         ans = ans.next
     print "======"
-    
+
     t = l1 = ListNode(1)
     t.next = ListNode(2);t=t.next
     t.next = ListNode(3);t=t.next
@@ -59,7 +59,7 @@ if __name__ == '__main__':
         print ans.val
         ans = ans.next
     print "======"
-    
+
     t = l1 = ListNode(1)
     t.next = ListNode(2);t=t.next
     t.next = ListNode(3);t=t.next

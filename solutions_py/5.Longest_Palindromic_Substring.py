@@ -10,7 +10,7 @@ class Solution(object):
         # proprecess
         news = "#"+ "#".join([x for x in s]) +"#"
         maxp = 1; pos = 0;
-        
+
         pld = [0]*len(news)
         cur = 0; right = 0;
         for i in xrange(len(news)):

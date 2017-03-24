@@ -9,7 +9,7 @@ class Solution(object):
         :rtype: int
         """
 
-        isMinus = True if x < 0 else False 
+        isMinus = True if x < 0 else False
         x = -x if x < 0 else x
         ans = 0
         while x!=0:

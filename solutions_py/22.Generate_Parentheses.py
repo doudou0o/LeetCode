@@ -17,7 +17,7 @@ class Solution(object):
 
         ret = []
         generate("", n, n, ret)
-    
+
         return ret
 
 if __name__ == '__main__':

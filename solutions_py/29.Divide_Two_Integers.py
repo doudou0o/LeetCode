@@ -35,7 +35,7 @@ class Solution(object):
                 dd -= dv << digit
                 ans += 1 << digit
             digit -= 1
-        
+
         return ans if isPos else -ans
 
 if __name__ == '__main__':

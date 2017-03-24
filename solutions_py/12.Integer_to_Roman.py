@@ -14,7 +14,7 @@ class Solution(object):
         roma_reg_4 = ['M', 'MM', 'MMM']
 
         RomaStr = ""
-        
+
         n_4 = num/1000 - 1
         if n_4 >= 0: RomaStr += roma_reg_4[n_4]
         n_3 = (num%1000)/100 - 1
